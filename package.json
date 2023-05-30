@@ -1,0 +1,13 @@
+{
+  "name": "my-project",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/index.html --dist-dir ./dist -p 5000 --open ",
+    "build": "parcel build src/index.html --no-source-maps --target default --dist-dir ./dist",
+    "test": "echo is ok"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  }
+}
