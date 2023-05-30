@@ -35,8 +35,9 @@ const ts = new TreeStore(items);
 
 
  ## Примеры использования:
+ 
+ *  - ts.getAll();
  ```js
- *  - ts.getAll(); 
  [
      {"id":1,"parent":"root"},
      {"id":2,"parent":1,"type":"test"},
@@ -47,25 +48,34 @@ const ts = new TreeStore(items);
      {"id":7,"parent":4,"type":null},
      {"id":8,"parent":4,"type":null},
  ]
- 
- *  - ts.getItem(7) ;
+```
+*  - ts.getItem(7) ;
+```js
     {"id":7,"parent":4,"type":null}
- 
-    - ts.getChildren(4);
+```
+* - ts.getChildren(4);
+
+```js
     [
         {"id":7,"parent":4,"type":null},
         {"id":8,"parent":4,"type":null},
     ]
- *  - ts.getChildren(5); 
+```
+ *  - ts.getChildren(5);
+```js
  []
- 
- *  - ts.getChildren(2); 
+```
+
+ *  - ts.getChildren(2);
+```js
  [
      {"id":4,"parent":2,"type":"test"},
      {"id":5,"parent":2,"type":"test"},
      {"id":6,"parent":2,"type":"test"},
  ]
- *  - ts.getAllChildren(2);  
+```
+ *  - ts.getAllChildren(2);
+```js
  [
      {"id":4,"parent":2,"type":"test"},
      {"id":5,"parent":2,"type":"test"},
@@ -73,13 +83,12 @@ const ts = new TreeStore(items);
      {"id":7,"parent":4,"type":null},
      {"id":8,"parent":4,"type":null},
  ]
- 
- *  - ts.getAllParents(7); 
+ ```
+ *  - ts.getAllParents(7);
+```js
  [
      {"id":4,"parent":2,"type":"test"},
      {"id":2,"parent":1,"type":"test"},
      {"id":1,"parent":"root"},
  ]
- 
-*
-``
+```

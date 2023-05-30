@@ -1,5 +1,5 @@
-const content = 'OK'
-import {TreeStore} from "./services/TreeStore";
+const content = '';
+import { TreeStore } from "./services/TreeStore";
 import { FLAT_ARRAY_FAKE } from './fakeData/FakeData'
 
 const ts = new TreeStore(FLAT_ARRAY_FAKE);

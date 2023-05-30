@@ -10,6 +10,7 @@ export class TreeStore {
             this.categoriesIdsByIndex[categories[i].id] = i;
             categories[i].categories = [];
         }
+
         this.categories = categories;
 
         for (i = 0; i < categories.length; i++) {
@@ -22,6 +23,8 @@ export class TreeStore {
                 this.roots.push(category);
             }
         }
+
         console.log(this.roots, this.categoriesIdsByIndex );
     }
+
 }
